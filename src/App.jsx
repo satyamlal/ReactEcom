@@ -39,10 +39,19 @@ const App = () => {
         </ul>
       </nav>
 
-      <main className="flex-1 text-white bg-[#3B4254] p-8">
+      <div className="h-full w-[82%] pt-[40px] pl-[30px] text-white bg-[#3B4254]">
         <h2 className="text-2xl font-bold mb-4">Dashboard</h2>
-        <p>Select a category or click "Add New Product" to get started.</p>
-      </main>
+        <div className="card w-[12%] h-[32vh] border hover:shadow-lg hover:shadow-[#4C526B] rounded flex flex-col justify-center items-center hover:scale-105 transition ease-in-out duration-400">
+          <div
+            className="w-full h-[80%] mb-3 bg-contain bg-no-repeat bg-center"
+            style={{
+              backgroundImage:
+                "url(https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg)",
+            }}
+          ></div>
+          <h1 className="text-black">Product Title</h1>
+        </div>
+      </div>
     </div>
   );
 };
