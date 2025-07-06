@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <Nav />
-      <div className="h-full w-[82%] pt-[40px] pl-[30px] text-white bg-[#3B4254] overflow-x-hidden overflow-y-auto">
+      <div className="h-full w-[82%] pt-[40px] pl-[30px] text-white bg-white overflow-x-hidden overflow-y-auto">
         <h2 className="text-2xl font-bold mb-4">Dashboard</h2>
         <div className="flex flex-wrap">
           <Link
