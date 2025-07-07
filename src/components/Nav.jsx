@@ -1,7 +1,7 @@
 const Nav = () => {
   return (
     <>
-      <nav className="w-[18%] h-full bg-[#333748] p-10 flex flex-col items-center">
+      <nav className="min-w-[14%] h-full bg-[#333748] p-10 flex flex-col items-center">
         <a
           className="px-4 py-4 font-semibold text-white 
                       border-2 border-zinc-400 
@@ -18,7 +18,7 @@ const Nav = () => {
 
         <hr className="my-5 w-[120%] border-white border-1 opacity-50" />
         <h1 className="w-[80%] text-white text-2xl font-semibold mb-2">
-          Categories Filter
+          Categories
         </h1>
         <ul className="w-full px-2 text-white">
           <li className="group p-3 mb-3 flex items-center text-white hover:font-bold bg-[#1258E2] hover:bg-blue-600 rounded cursor-pointer">
