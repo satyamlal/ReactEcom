@@ -1,8 +1,14 @@
 import Nav from "../components/Nav";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { ProductContext } from "../utils/Context";
+import Loading from "./Loading";
 
 const Home = () => {
-  return (
+  const [products] = useContext(ProductContext);
+  console.log(products);
+
+  return products ? (
     <>
       <Nav />
       <div className="h-full w-[100%] pt-[40px] pl-[30px] text-white bg-white overflow-x-hidden overflow-y-auto">
@@ -453,6 +459,8 @@ const Home = () => {
         </div>
       </div>
     </>
+  ) : (
+    <Loading />
   );
 };
 
