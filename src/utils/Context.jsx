@@ -11,15 +11,12 @@ const Context = (props) => {
     try {
       const { data } = await axios("/products");
       setProducts(data);
-      console.log(data);
     } catch (error) {
       console.log(error);
     }
   };
   useEffect(() => {
-    setInterval(() => {
-      getProducts();
-    }, 500);
+    getProducts();
   }, []);
 
   return (
