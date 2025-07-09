@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ProductContext } from "../utils/Context";
+import { ProductContext } from "../utils/ProductContext";
 
 const Nav = () => {
   const [products] = useContext(ProductContext);

@@ -1,7 +1,8 @@
 import Nav from "../components/Nav";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { ProductContext } from "../utils/Context";
+import Context from "./../utils/Context";
+import { ProductContext } from "../utils/ProductContext";
 import Loading from "./Loading";
 
 const Home = () => {

@@ -1,8 +1,7 @@
 import axios from "./axios";
+import { ProductContext } from "../utils/ProductContext";
 
-import { useState, useEffect, createContext } from "react";
-
-export const ProductContext = createContext();
+import { useState, useEffect } from "react";
 
 const Context = (props) => {
   const [products, setProducts] = useState(null);
