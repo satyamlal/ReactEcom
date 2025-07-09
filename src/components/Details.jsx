@@ -19,7 +19,7 @@ const Details = () => {
 
   useEffect(() => {
     getSingleProduct();
-  }, []);
+  });
 
   return product ? (
     <>

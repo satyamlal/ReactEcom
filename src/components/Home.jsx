@@ -13,7 +13,7 @@ const Home = () => {
       <div className="h-full w-[100%] pt-[40px] pl-[30px] text-white bg-white overflow-x-hidden overflow-y-auto">
         <h2 className="text-2xl font-bold mb-4">Dashboard</h2>
         <div className="flex flex-wrap">
-          {products.map((product, index) => (
+          {products.map((product) => (
             <Link
               key={product.id}
               to={`/details/${product.id}`}
