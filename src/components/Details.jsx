@@ -32,11 +32,14 @@ const Details = () => {
         />
         <div className="text-[#061D4B] h-[44%] w-[30%] mt-[52px] ml-[32px]">
           <h1 className="text-3xl -mb-2">{product.title}</h1>
-          <h3 className="text-zinc-400 my-3">{product.category}</h3>
+          <h3 className="text-zinc-400 my-3">Category : {product.category}</h3>
           <p className="text-red-400 mb-2 text-xl font-semibold">
-            {product.price}
+            <strong>Price : </strong>₹{product.price}
           </p>
-          <p className="wrap-break-word mb-5">{product.description}</p>
+          <p className="wrap-break-word mb-5">
+            <strong>Description : </strong>
+            {product.description}
+          </p>
           <div className="flex gap-4">
             <Link className="py-2 min-w-[6vw] max-w-[6vw] border-2 border-[#2563EB] hover:border-transparent text-[#2563EB] hover:text-white hover:bg-[#2563EB] rounded-xl text-md font-bold flex items-center justify-center transform transition-transform duration-800 ease-in-out hover:scale-110">
               Edit
