@@ -1,5 +1,4 @@
 import Nav from "../components/Nav";
-import TopBar from "../components/TopBar";
 import { useContext, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ProductContext } from "../utils/ProductContext";
@@ -34,9 +33,8 @@ const Home = () => {
   if (!products) return <Loading />;
 
   return (
-    <div className="flex flex-col h-screen">
-      <TopBar />
-      <div className="flex flex-1 overflow-hidden">
+    <div className="flex flex-col h-screen pt-[55px]">
+      <div className="flex flex-1">
         <Nav />
         <main className="flex-1 bg-white p-8 overflow-y-auto">
           <h2 className="text-2xl font-bold mb-4 text-gray-800">Dashboard</h2>

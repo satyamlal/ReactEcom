@@ -1,11 +1,10 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const TopBar = () => {
   return (
-    <div className="w-full h-[60px] bg-[#1A202C] px-[70px] text-white flex items-center justify-between">
-      <Link to="/" className="text-4xl font-bold">
+    <div className="fixed top-0 left-0 w-full h-topbar z-50 bg-[#1A202C] px-[70px] text-white flex items-center justify-between">
+      <Link to="/" className="text-3xl font-bold">
         <strong>Home</strong>
       </Link>
 

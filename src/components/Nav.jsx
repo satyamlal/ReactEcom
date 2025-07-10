@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { ProductContext } from "../utils/ProductContext";
 import { Link } from "react-router-dom";
-import TopBar from "./TopBar";
 
 const Nav = () => {
   const [products] = useContext(ProductContext);
@@ -22,7 +21,7 @@ const Nav = () => {
 
   return (
     <>
-      <nav className="min-w-[16%] h-full bg-[#333748] p-10 flex flex-col items-center">
+      <nav className="min-w-[16%] h-full bg-[#333748] pt-[2%] p-10 flex flex-col items-center">
         <a
           className="px-4 py-4 font-semibold text-white 
                       border-2 border-zinc-400 

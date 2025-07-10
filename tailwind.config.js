@@ -14,6 +14,9 @@ export default {
         "top-left": "-4px -4px 8px rgba(0,0,0,0.15)",
         "inner-soft": "inset 0 2px 6px rgba(0,0,0,0.2)",
       },
+      height: {
+        "topbar": "60px",
+      },
     },
   },
   plugins: [],
